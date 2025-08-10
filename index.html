@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML/CSS Cheatsheet</title>
+    <link href="./resources/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>HTML/CSS Cheatsheet</h1>
+        <p>Quick reference for HTML and CSS syntax and properties.</p>
+        <nav>
+            <ul>
+                <li><a href="#html">HTML Basics</a></li>
+                <li><a href="#css">CSS Basics</a></li>
+                <li><a href="#selectors">CSS Selectors</a></li>
+                <li><a href="#properties">Common CSS Properties</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table class="html-basics">
+            <caption>HTML Basics</caption>
+            <thead>
+                <tr class="title">
+                    <th scope="col">Element</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                    <td>Defines the document type and version of HTML</td>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Root element of an HTML page</td>
+                    <td>&lt;html&gt;...&lt;/html&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Container for metadata (data about data)</td>
+                    <td>&lt;head&gt;...&lt;/head&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Sets the title of the document</td>
+                    <td>&lt;title&gt;Page Title&lt;/title&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Contains the content of the document</td>
+                    <td>&lt;body&gt;...&lt;/body&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Defines a paragraph</td>
+                    <td>&lt;p&gt;This is a paragraph.&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Defines a hyperlink</td>
+                    <td>&lt;a href="https://example.com"&gt;Link&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Embeds an image</td>
+                    <td>&lt;img src="image.jpg" alt="Description"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Defines a division or section</td>
+                    <td>&lt;div&gt;Content here&lt;/div&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Defines a section in a document</td>
+                    <td>&lt;span&gt;Inline text&lt;/span&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Defines an unordered list</td>
+                    <td>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Defines an ordered list</td>
+                    <td>&lt;ol&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ol&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Defines a table</td>
+                    <td>&lt;table&gt;...&lt;/table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Defines a row in a table</td>
+                    <td>&lt;tr&gt;...&lt;/tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Defines a header cell in a table</td>
+                    <td>&lt;th&gt;Header&lt;/th&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Defines a standard cell in a table</td>
+                    <td>&lt;td&gt;Data&lt;/td&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Defines an HTML form for user input</td>
+                    <td>&lt;form&gt;...&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;input&gt;</td>
+                    <td>Defines an input control</td>
+                    <td>&lt;input type="text" name="name"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Defines a clickable button</td>
+                    <td>&lt;button&gt;Click me&lt;/button&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>Defines a label for an input element</td>
+                    <td>&lt;label for="inputId"&gt;Label Text&lt;/label&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;select&gt;</td>
+                    <td>Defines a dropdown list</td>
+                    <td>&lt;select&gt;&lt;option&gt;Option 1&lt;/option&gt;&lt;/select&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;option&gt;</td>
+                    <td>Defines an option in a dropdown list</td>
+                    <td>&lt;option value="value"&gt;Option Text&lt;/option&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;textarea&gt;</td>
+                    <td>Defines a multiline text input control</td>
+                    <td>&lt;textarea rows="4" cols="50"&gt;Text here&lt;/textarea&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Defines the relationship between a document and an external resource (most used to link stylesheets)</td>
+                    <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;script&gt;</td>
+                    <td>Defines a client-side script</td>
+                    <td>&lt;script src="script.js"&gt;&lt;/script&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Defines metadata about an HTML document</td>
+                    <td>&lt;meta charset="UTF-8"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Defines a header for a document or section</td>
+                    <td>&lt;header&gt;...&lt;/header&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Defines a footer for a document or section</td>
+                    <td>&lt;footer&gt;...&lt;/footer&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Defines independent, self-contained content</td>
+                    <td>&lt;article&gt;...&lt;/article&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Defines a section in a document</td>
+                    <td>&lt;section&gt;...&lt;/section&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Defines content aside from the content it is placed in (like a sidebar)</td>
+                    <td>&lt;aside&gt;...&lt;/aside&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Defines navigation links</td>
+                    <td>&lt;nav&gt;...&lt;/nav&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>Defines the main content of a document</td>
+                    <td>&lt;main&gt;...&lt;/main&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Defines self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+                    <td>&lt;figure&gt;...&lt;/figure&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Defines a caption for a &lt;figure&gt; element</td>
+                    <td>&lt;figcaption&gt;Caption text&lt;/figcaption&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Defines a section that is quoted from another source</td>
+                    <td>&lt;blockquote&gt;...&lt;/blockquote&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Defines a piece of computer code</td>
+                    <td>&lt;code&gt;console.log('Hello, World!')&lt;/code&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;pre&gt;</td>
+                    <td>Defines preformatted text</td>
+                    <td>&lt;pre&gt;Preformatted text here&lt;/pre&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Defines important text</td>
+                    <td>&lt;strong&gt;Important text&lt;/strong&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Defines emphasized text</td>
+                    <td>&lt;em&gt;Emphasized text&lt;/em&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;small&gt;</td>
+                    <td>Defines smaller text</td>
+                    <td>&lt;small&gt;Small text&lt;/small&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Defines marked or highlighted text</td>
+                    <td>&lt;mark&gt;Highlighted text&lt;/mark&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;sub&gt;</td>
+                    <td>Defines subscript text</td>
+                    <td>&lt;sub&gt;Subscript&lt;/sub&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;sup&gt;</td>
+                    <td>Defines superscript text</td>
+                    <td>&lt;sup&gt;Superscript&lt;/sup&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;time&gt;</td>
+                    <td>Defines a specific time (or range of time)</td>
+                    <td>&lt;time datetime="2023-10-01"&gt;October 1, 2023&lt;/time&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;progress&gt;</td>
+                    <td>Defines the progress of a task</td>
+                    <td>&lt;progress value="50" max="100"&gt;50%&lt;/progress&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;meter&gt;</td>
+                    <td>Defines a scalar measurement within a known range</td>
+                    <td>&lt;meter value="0.6" min="0" max="1"&gt;60%&lt;/meter&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Defines additional details that the user can view or hide</td>
+                    <td>&lt;details&gt;&lt;summary&gt;More info&lt;/summary&gt;Details here&lt;/details&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;summary&gt;</td>
+                    <td>Defines a summary for a &lt;details&gt; element</td>
+                    <td>&lt;summary&gt;Summary text&lt;/summary&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;dialog&gt;</td>
+                    <td>Defines a dialog box or other interactive component</td>
+                    <td>&lt;dialog&gt;Dialog content&lt;/dialog&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="css-basics">
+            <caption>CSS Basics</caption>
+            <thead>
+                <tr class="title">
+                    <th scope="col">Property</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>Sets the color of text</td>
+                    <td>color: red;</td>
+                </tr>
+                <tr>
+                    <td>background-color</td>
+                    <td>Sets the background color of an element</td>
+                    <td>background-color: blue;</td>
+                </tr>
+                <tr>
+                    <td>font-size</td>
+                    <td>Sets the size of the font</td>
+                    <td>font-size: 16px;</td>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td>Sets the font family for text</td>
+                    <td>font-family: 'Ubuntu', sans-serif;</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>Sets the weight (boldness) of the font</td>
+                    <td>font-weight: bold;</td>
+                </tr>
+                <tr>
+                    <td>text-align</td>
+                    <td>Sets the horizontal alignment of text</td>
+                    <td>text-align: center;</td>
+                </tr>
+                <tr>
+                    <td>line-height</td>
+                    <td>Sets the height of a line box</td>
+                    <td>line-height: 1.5;</td>
+                </tr>
+                <tr>
+                    <td>margin</td>
+                    <td>Sets the margin area on all four sides of an element</td>
+                    <td>margin: 10px;</td>
+                </tr>
+                <tr>
+                    <td>padding</td>
+                    <td>Sets the padding area on all four sides of an element</td>
+                    <td>padding: 10px;</td>
+                </tr>
+                <tr>
+                    <td>border</td>
+                    <td>Sets the border around an element</td>
+                    <td>border: 1px solid black;</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Sets the width of an element</td>
+                    <td>width: 100%;</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Sets the height of an element</td>
+                    <td>height: 200px;</td>
+                </tr>
+                <tr>
+                    <td>display</td>
+                    <td>Sets the display behavior of an element</td>
+                    <td>display: block;</td>
+                </tr>
+                <tr>
+                    <td>position</td>
+                    <td>Sets the type of positioning method used for an element</td>
+                    <td>position: relative;</td>
+                </tr>
+                <tr>
+                    <td>top</td>
+                    <td>Sets the top position of an element</td>
+                    <td>top: 10px;</td>
+                </tr>
+                <tr>
+                    <td>left</td>
+                    <td>Sets the left position of an element</td>
+                    <td>left: 20px;</td>
+                </tr>
+                <tr>
+                    <td>z-index</td>
+                    <td>Sets the stack order of an element</td>
+                    <td>z-index: 100;</td>
+                </tr>
+                <tr>
+                    <td>overflow</td>
+                    <td>Sets what happens when content overflows an element's box</td>
+                    <td>overflow: hidden;</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>Sets an element to float to the left or right</td>
+                    <td>float: left;</td>
+                </tr>
+                <tr>
+                    <td>clear</td>
+                    <td>Sets whether an element can be next to floating elements</td>
+                    <td>clear: both;</td>
+                </tr>
+                <tr>
+                    <td>flex</td>
+                    <td>Sets the flexible length of a flex item</td>
+                    <td>flex: 1;</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="css-selectors">
+            <caption>CSS Selectors</caption>
+            <thead>
+                <tr class="title">
+                    <th scope="col">Selector</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                    <td>* { color: black; }</td>
+                </tr>
+                <tr>
+                    <td>element</td>
+                    <td>Selects all elements of a specific type</td>
+                    <td>p { font-size: 16px; }</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>Selects all elements with a specific class</td>
+                    <td>.my-class { color: red; }</td>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>Selects an element with a specific ID</td>
+                    <td>#my-id { background-color: blue; }</td>
+                </tr>
+                <tr>
+                    <td>element.class</td>
+                    <td>Selects elements of a specific type with a specific class</td>
+                    <td>div.my-class { margin: 10px; }</td>
+                </tr>
+                <tr>
+                    <td>element#id</td>
+                    <td>Selects a specific element with a specific ID</td>
+                    <td>h1#main-title { text-align: center; }</td>
+                </tr>
+                <tr>
+                    <td>element, element2</td>
+                    <td>Selects multiple elements</td>
+                    <td>h1, h2 { font-weight: bold; }</td>
+                </tr>
+                <tr>
+                    <td>element element2</td>
+                    <td>Selects element2 that is a descendant of element</td>
+                    <td>div p { color: green; }</td>
+                </tr>
+                <tr>
+                    <td>element > element2</td>
+                    <td>Selects element2 that is a direct child of element</td>
+                    <td>ul > li { list-style-type: none; }</td>
+                </tr>
+                <tr>
+                    <td>element + element2</td>
+                    <td>Selects element2 that is immediately preceded by element</td>
+                    <td>h1 + p { margin-top: 0; }</td>
+                </tr>
+                <tr>
+                    <td>element ~ element2</td>
+                    <td>Selects all element2 that are preceded by element</td>
+                    <td>h1 ~ p { color: gray; }</td>
+                </tr>
+                <tr>
+                    <td>:hover</td>
+                    <td>Selects an element when it is hovered over</td>
+                    <td>a:hover { text-decoration: underline; }</td>
+                </tr>
+                <tr>
+                    <td>:focus</td>
+                    <td>Selects an element when it is focused (e.g., input fields)</td>
+                    <td>input:focus { border-color: blue; }</td>
+                </tr>
+                <tr>
+                    <td>:first-child</td>
+                    <td>Selects the first child of an element</td>
+                    <td>li:first-child { font-weight: bold; }</td>
+                </tr>
+                <tr>
+                    <td>:last-child</td>
+                    <td>Selects the last child of an element</td>
+                    <td>li:last-child { font-style: italic; }</td>
+                </tr>
+                <tr>
+                    <td>:nth-child(n)</td>
+                    <td>Selects the nth child of an element</td>
+                    <td>li:nth-child(2) { color: red; }</td>
+                </tr>
+                <tr>
+                    <td>:not(selector)</td>
+                    <td>Selects elements that do not match the specified selector</td>
+                    <td>p:not(.special) { color: gray; }</td>
+                </tr>
+                <tr>
+                    <td>:checked</td>
+                    <td>Selects checked input elements (e.g., checkboxes, radio buttons)</td>
+                    <td>input:checked { background-color: yellow; }</td>
+                </tr>
+                <tr>
+                    <td>:disabled</td>
+                    <td>Selects disabled input elements</td>
+                    <td>input:disabled { opacity: 0.5; }</td>
+                </tr>
+                <tr>
+                    <td>:enabled</td>
+                    <td>Selects enabled input elements</td>
+                    <td>input:enabled { cursor: pointer; }</td>
+                </tr>
+                <tr>
+                    <td>:active</td>
+                    <td>Selects an element that is being activated by the user</td>
+                    <td>a:active { color: orange; }</td>
+                </tr>
+                <tr>
+                    <td>:visited</td>
+                    <td>Selects links that have been visited</td>
+                    <td>a:visited { color: purple; }</td>
+                </tr>
+                <tr>
+                    <td>:link</td>
+                    <td>Selects links that have not been visited</td>
+                    <td>a:link { color: blue; }</td>
+                </tr>
+                <tr>
+                    <td>:before</td>
+                    <td>Inserts content before an element</td>
+                    <td>p:before { content: "Note: "; font-weight: bold; }</td>
+                </tr>
+                <tr>
+                    <td>:after</td>
+                    <td>Inserts content after an element</td>
+                    <td>p:after { content: " (end)"; }</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="common-properties">
+            <caption>Common CSS Properties</caption>
+            <thead>
+                <tr class="title">
+                    <th scope="col">Property</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>background-image</td>
+                    <td>Sets a background image for an element</td>
+                    <td>background-image: url('image.jpg');</td>
+                </tr>
+                <tr>
+                    <td>background-size</td>
+                    <td>Sets the size of the background image</td>
+                    <td>background-size: cover;</td>
+                </tr>
+                <tr>
+                    <td>border-radius</td>
+                    <td>Sets the radius of the element's corners</td>
+                    <td>border-radius: 5px;</td>
+                </tr>
+                <tr>
+                    <td>box-shadow</td>
+                    <td>Adds shadow effects around an element's frame</td>
+                    <td>box-shadow: 2px 2px 5px gray;</td>
+                </tr>
+                <tr>
+                    <td>opacity</td>
+                    <td>Sets the opacity level for an element</td>
+                    <td>opacity: 0.8;</td>
+                </tr>
+                <tr>
+                    <td>transition</td>
+                    <td>Defines the transition effect when a property changes</td>
+                    <td>transition: all 0.3s ease;</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+</html>

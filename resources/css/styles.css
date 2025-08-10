@@ -1,0 +1,53 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+caption {
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 10px;
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    table-layout: auto;
+    width: 80%;
+    min-width: 1000px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-right: 1px solid #000;
+    text-align: left;
+}
+
+.title {
+    background-color: rgba(128, 128, 128, 0.425);
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid #000;
+}
